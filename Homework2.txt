@@ -1,0 +1,13 @@
+
+1. Try out the vanity bitcoin address example at asecurity or the Ethereum version
+
+2. What do you understand by
+	1. O(n)
+	2. O(1)
+	3. O(log n)
+
+3. Which of those is best when describing a proof size
+
+4. In your teams discuss why are there few identity projects on Starknet ?
+
+5. In preparation for future lessons you need to install Protostar
