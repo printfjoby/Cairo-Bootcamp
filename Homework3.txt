@@ -1,0 +1,30 @@
+ 
+1. Add a function called square that will be called from the main function.
+
+   The square function should have one parameter x and return the square of x .
+
+   In the main function call the square function and output the result.
+
+
+Program
+
+
+// Use the output builtin.
+%builtins output
+
+// Import the serialize_word() function.
+from starkware.cairo.common.serialize import serialize_word
+
+// Square function
+func square (x : felt) -> (y : felt){
+    return (y=x*x);
+}
+
+func main{output_ptr: felt*}() {
+
+    tempvar x = 10;
+    let (y) = square(x=x);
+    serialize_word(x);
+    serialize_word(y);
+    return ();
+}
