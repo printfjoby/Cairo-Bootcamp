@@ -19,8 +19,8 @@ func simple_math{range_check_ptr}() {
     %{ print(f"Dividing 70 by 2: {ids.div_rem1} ")%}
 
    // dividing 7 by 2
-   let (div_rem,_) = unsigned_div_rem(7,2);
-    %{ print(f"Dividing 7 by 2: {ids.div_rem} ")%}
+   let (div_q,div_rem) = unsigned_div_rem(7,2);
+    %{ print(f"Dividing 7 by 2: {ids.div_q}  and remainder : {ids.div_rem}")%}
 
     return ();
 }

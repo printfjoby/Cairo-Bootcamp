@@ -3,8 +3,7 @@ func calculate_sum(n: felt) -> (sum: felt) {
     if(n == 1){
         return (1,);
     }
-    let temp_sum = n + calculate_sum(n-1);
-
-    //%{ print(f"Sum : {ids.temp_sum} ")%}
-    return(sum=temp_sum);
+    let (temp_sum) = calculate_sum(n=n-1);
+    let new_sum = temp_sum + n;
+    return(sum=new_sum);
 }
