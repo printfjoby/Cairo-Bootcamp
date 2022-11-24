@@ -5,6 +5,7 @@ from starkware.cairo.common.math import abs_value
 func abs_eq{syscall_ptr: felt*, range_check_ptr} (x: felt, y: felt) -> (bit: felt) {
     let abs_x = abs_value(x);
     let abs_y = abs_value(y);
+    // Check whether the absolute value of x is equal to y
      if(abs_x == abs_y){
         return(bit=1,);
     } 

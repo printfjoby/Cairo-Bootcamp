@@ -11,5 +11,4 @@ func sum_even{bitwise_ptr: BitwiseBuiltin*}(arr_len: felt, arr: felt*, run: felt
     let (temp_sum) = sum_even(arr_len = arr_len -1);
     let new_sum = temp_sum + arr[arr_len];
     return(sum=new_sum);
-
 }
